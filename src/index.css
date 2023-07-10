@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -142,4 +141,38 @@ div {
 .white__gradient {
   background: rgba(255, 255, 255, 0.6);
   filter: blur(750px);
+}
+
+.content{
+  opacity: 0;
+  transition: all .5s ease;
+}
+
+.content:hover{
+  opacity: 1;
+  transition: all .5s .5s ease-out;
+}
+
+.hover_box {
+  transition : all .5s ease-in;
+}
+
+img {
+  transition : all 1s ease-in;
+}
+
+.hover_box:hover {
+  height: auto;
+  transition: all .5s ease-out;
+}
+
+button {
+  transition : all .6s ease;
+}
+button img{
+  transition : all .6s ease;
+}
+
+button h3{
+  transition : all .6s ease;
 }
