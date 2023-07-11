@@ -144,6 +144,8 @@ div {
 }
 
 .content{
+  width: 100%;
+  height: 100%;
   opacity: 0;
   transition: all .5s ease;
 }
@@ -162,8 +164,13 @@ img {
 }
 
 .hover_box:hover {
-  height: auto;
   transition: all .5s ease-out;
+}
+.hover_box .content {
+  transition: all .5s ease;
+}
+.hover_box .content:hover { 
+  transition: all .5s .5s ease-out;
 }
 
 button {

@@ -26,6 +26,8 @@ const Intro = () => {
     };
     const handleContact = () => {
       setExpandContact(!expandContact);
+      setCopiedEmail(false);
+      setCopiedPhone(false);
     };
     const handleActivity = () => {
       setExpandActivity(!expandActivity);
@@ -62,11 +64,13 @@ const Intro = () => {
     
     const handleLinkedInButtonClick = () => {
       // Logic for handling the LinkedIn button click
+      window.location.href = "https://www.linkedin.com/in/Khoatran418";
       console.log('LinkedIn button clicked');
     };
     
     const handleGithubButtonClick = () => {
       // Logic for handling the Github button click
+      window.location.href = "https://github.com/kvtran3546";
       console.log('Github button clicked');
     };
 
@@ -80,7 +84,7 @@ const Intro = () => {
         <div onMouseEnter={handleAbout} onMouseLeave={handleAbout}
           className={`absolute hover_box top-[15%] left-[32%] w-[88px] h-[88px] rounded-lg bg-black border-gray-300 border-[2px] shadow-lg shadow-white flex items-center justify-center hover:w-[500px] hover:h-[230px] hover:bg-gray-300`}>
           {expandAbout? 
-              <div className="content bg-gray-300 py-2 px-3">
+              <div className={`content bg-gray-300 py-2 px-3`}>
                   <h1 style={{fontFamily: 'Nunito, sans-serif'}} className='text-[30px] text-black w-inherit h-inherit '>About</h1>
                   <p className={`text-[15px] text-black w-inherit h-inherit my-3`}>My name is Khoa Tran, and I am a passionate and dedicated software engineer. I have a strong foundation in computer science and a keen interest in building intuitive and efficient applications. I possess strong time management skills and adaptability. Outside of my professional pursuits, I enjoy playing badminton, snowboarding, engaging in charity work, following F1 racing, and have a passion for stand-up comedy.</p>
               </div>
@@ -152,12 +156,37 @@ const Intro = () => {
               <img src={Contact} alt="contact" className={`w-[24px] h-[24px]`}/>
             }
         </div>
-        <div pnmouseEnter={handleActivity} onMouseLeave={handleActivity}
-          className={`absolute hover_box bottom-[8%] right-[35%] w-[88px] h-[88px] rounded-lg bg-black border-gray-300 border-[2px] shadow-lg shadow-white flex items-center justify-center hover:w-[300px]  hover:bg-gray-300`}>
+        <div onMouseEnter={handleActivity} onMouseLeave={handleActivity}
+          className={`absolute hover_box bottom-[8%] right-[35%] w-[88px] h-[88px] rounded-lg bg-black border-gray-300 border-[2px] shadow-lg shadow-white flex items-center justify-center hover:w-[400px] hover:h-[250px]  hover:bg-gray-300`}>
             {expandActivity? 
-              <div className="content bg-gray-300 py-2 px-2">
+              <div className="content bg-gray-300 py-2 px-2 flex justify-left flex-col">
                 <h1 style={{fontFamily: 'Nunito, sans-serif'}} className='text-[30px] text-black w-inherit h-inherit'>Activity</h1>
-                
+                <ul className={`list-disc text-[12px] mt-[5px] ml-[20px]`}>
+                  <li className='mt-[2px]'>
+                    Badminton Club President
+                    <ul className={`list-disc text-[12px] ml-[20px]`}>
+                      <li>
+                        Organize monthly tournaments.
+                        Host weekly practices.
+                        Manage club's funding.
+                      </li>
+                    </ul>
+                  </li>
+                  <li className='mt-[2px]'>
+                    Recreational Basketball
+                    <ul className={`list-disc text-[12px] ml-[20px]`}>
+                      <li>Participate in New Jersey Co-ed Basketball League.</li>
+                    </ul>
+                  </li>
+                  <li className='mt-[2px]'>
+                    Robotic Club Member
+                    <ul className={`list-disc text-[12px] ml-[20px]`}>
+                      <li>Compete in the annual First Tech Challenge.</li>
+                      <li>Design a competitive robot.</li>
+                      <li>Write and update robot's code.</li>
+                    </ul>
+                  </li>
+                </ul>
               </div> 
               : 
               <img src={Activity} alt="activity" className={`w-[24px] h-[24px]`}/>
