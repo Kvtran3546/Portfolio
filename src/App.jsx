@@ -8,14 +8,16 @@ function App() {
       <div>
         <Navbar />
       </div>
-      <div>
-        <div className='h-[700px]'>
+      <div >
+        <div id="Intro"  className='h-[700px] '>
           <Intro />
         </div>
       </div>
       <div>
-        <div>
+        <div id="Resume" >
           <Resume />
+        </div>
+        <div id="Contact" className='h-[900px] '>
           <Contact />
         </div>
       </div>
