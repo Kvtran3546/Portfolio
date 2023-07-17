@@ -7,8 +7,4 @@ export default defineConfig({
 
   plugins: [react()],
   base: "/Portfolio/",
-  build: {
-    outDir: 'build',
-  },
-
 })
