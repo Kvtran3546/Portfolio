@@ -3,7 +3,9 @@
 @tailwind components;
 @tailwind utilities;
 
-
+html {
+  background-color: #F2F2F2;
+}
 :root {
   --black-gradient: linear-gradient(
     144.39deg,
@@ -19,7 +21,7 @@
 }
 
 div {
-  background-color: black;
+  background-color: #F2F2F2;
 }
 
 .text-gradient {
@@ -182,4 +184,65 @@ button img{
 
 button h3{
   transition : all .6s ease;
+}
+
+.race-track {
+  width: 100%;
+  height: auto;
+  overflow: hidden; /* Hide any overflow outside the race track */
+  position: relative;
+}
+
+.road {
+  position: relative;
+  background-color: gray;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 80%;
+  height: 40px;
+  padding: 3px 10px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.car {
+  transform: scaleX(-1);
+  position: relative;
+  animation-name: moveCar;
+  animation-iteration-count: infinite;
+}
+@keyframes moveCar {
+  0% {
+    left: 0;
+    transform: scaleX(-1);
+  }
+  40% {
+    left: calc(100% - 100px);
+    transform: scaleX(-1);
+  }
+  41% {
+    left: calc(100% - 100px);
+    transform: scaleX(1);
+  }
+  90% {
+    left: 0;
+    transform: scaleX(1);
+  }
+  91% {
+    left: 0;
+    transform: scaleX(-1);
+  }
+  100% {
+    left: 0;
+  }
+}
+
+hr {
+  height: 2px;
+  color: white;
+  background-color: white;
 }

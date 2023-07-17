@@ -1,24 +1,21 @@
 import styles from './style';
-import {Navbar, Contact, Intro, Fun, Projects} from "./components"
+import {Navbar, Contact, Intro, Fun, Projects, Resume} from "./components"
 
 
 function App() {
   return (
     <div>
       <div>
-        <div className=''>
-          <Navbar />
-        </div>
+        <Navbar />
       </div>
       <div>
-        <div>
+        <div className='h-[700px]'>
           <Intro />
         </div>
       </div>
       <div>
         <div>
-          <Projects />
-          <Fun /> 
+          <Resume />
           <Contact />
         </div>
       </div>

@@ -1,8 +1,11 @@
 import React from 'react'
+import Car from './Car'
 
 const Fun = () => {
   return (
-    <div>Fun</div>
+    <div>
+      <Car/>
+    </div>
   )
 }
 

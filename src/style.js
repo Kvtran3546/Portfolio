@@ -1,10 +1,10 @@
 const styles = {
     boxWidth: "xl:max-w-[1280px] w-full",
   
-    heading1: "font-sans text-[48px] font-semibold leading-[56px] tracking-tight text-center",
-    heading2: "font-sans text-[40px] font-semibold leading-[48px] tracking-tight text-left",
-    paragraph: "font-sans text-[20px] font-normal leading-[24px] tracking-tight text-center",
-    portrait: "w-[160px] h-[160px] top-[139px] left-[432px]",
+    heading1: "font-navigator text-[48px] font-semibold leading-[56px] tracking-tight text-center text-font",
+    heading2: "font-navigator text-[40px] font-semibold leading-[48px] tracking-tight text-left text-font",
+    paragraph: "font-sans text-[20px] font-normal leading-[24px] tracking-tight text-center text-font",
+    portrait: "w-[170px] h-[170px] top-[139px] left-[432px]",
 
   
     flexCenter: "flex justify-center items-center",
