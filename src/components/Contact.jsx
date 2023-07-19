@@ -14,7 +14,7 @@ const Contact = () => {
     setSubmitError(null);
     setSubmitSuccess(false);
 
-    axios.post('https://kvtran418.com/submit-form', data)
+    axios.post('https://64b81b0e4574b703c49197e3--kvtran418.netlify.app/submit-form', data)
       .then(() => {
         setSubmitSuccess(true);
       })
