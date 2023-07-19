@@ -8,7 +8,7 @@ const app = express();
 const port = 3000; // Choose the appropriate port number
 
 const corsOptions = {
-  origin: 'https://kvtran418.com',
+  origin: 'https://64b81b0e4574b703c49197e3--kvtran418.netlify.app',
 }
 
 app.use(cors());
