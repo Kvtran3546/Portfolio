@@ -1,10 +1,32 @@
 import React, {useState, useEffect, useRef} from 'react'
 import {useForm} from 'react-hook-form'
+import axios from 'axios';
 import styles from '../style'
 
 const Contact = () => {
   const {register, handleSubmit, watch, formState: {errors}} = useForm();
-  const onSubmit = (data) => console.log(data)
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitError, setSubmitError] = useState(null);
+  const [submitSuccess, setSubmitSuccess] = useState(false);
+
+  const onSubmit = (data) => {
+    setIsSubmitting(true);
+    setSubmitError(null);
+    setSubmitSuccess(false);
+
+    axios.post('http://localhost:3000/submit-form', data)
+      .then(() => {
+        setSubmitSuccess(true);
+      })
+      .catch((error) => {
+        setSubmitError('An error occurred. Please try again later.');
+        console.error(error);
+      })
+      .finally(() => {
+        setIsSubmitting(false);
+      });
+  };
+
   console.log(watch("email"))
   return (
     <div className='h-[600px] flex flex-col justify-center items-center mb-[150px]'>
