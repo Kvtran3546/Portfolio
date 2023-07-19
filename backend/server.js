@@ -6,15 +6,9 @@ require('dotenv').config();
 const app = express();
 const port = 3000; // Choose the appropriate port number
 
-app.use((req, res, next) => {
-  // allow different IP address
-  res.setHeader('Access-Control-Allow-Origin', '*');
-  // allow different header field 
-  res.header('Access-Control-Allow-Headers', '*');
-  res.header('Access-Control-Allow-Methods', 'POST, PUT, GET, OPTIONS');
-
-  next();
-});
+app.use(cors({
+  origin: 'https://kvtran418.com',
+}));
 
 // Route to handle form submission
 app.post('/submit-form', (req, res) => {
