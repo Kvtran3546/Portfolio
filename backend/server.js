@@ -8,7 +8,7 @@ const app = express();
 const port = 3000; // Choose the appropriate port number
 
 const corsOptions = {
-  origin: 'http://kvtran418.com',
+  origin: 'https://kvtran418.com',
 }
 
 app.use(cors());

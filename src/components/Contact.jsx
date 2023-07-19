@@ -14,7 +14,7 @@ const Contact = () => {
     setSubmitError(null);
     setSubmitSuccess(false);
 
-    axios.post('http://localhost:3000/submit-form', data)
+    axios.post('https://kvtran418.com/submit-form', data)
       .then(() => {
         setSubmitSuccess(true);
       })
