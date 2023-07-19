@@ -3,18 +3,29 @@ import {useForm} from 'react-hook-form'
 import axios from 'axios';
 import styles from '../style'
 
+
 const Contact = () => {
   const {register, handleSubmit, watch, formState: {errors}} = useForm();
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitError, setSubmitError] = useState(null);
   const [submitSuccess, setSubmitSuccess] = useState(false);
-
+  
   const onSubmit = (data) => {
     setIsSubmitting(true);
     setSubmitError(null);
     setSubmitSuccess(false);
 
-    axios.post('https://64b81b0e4574b703c49197e3--kvtran418.netlify.app/submit-form', data)
+    const headers = {
+      'Content-Type': 'application/json', // Specify that the request contains JSON data
+      // Add any other custom headers required by your backend here
+    };
+  
+    const requestOptions = {
+      headers,
+      withCredentials: true, // Include credentials in the request
+    };
+
+    axios.post('https://64b81b0e4574b703c49197e3--kvtran418.netlify.app/submit-form', data, requestOptions )
       .then(() => {
         setSubmitSuccess(true);
       })
@@ -25,7 +36,7 @@ const Contact = () => {
       .finally(() => {
         setIsSubmitting(false);
       });
-  };
+  }; 
 
   console.log(watch("email"))
   return (
