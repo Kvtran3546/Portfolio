@@ -4,7 +4,7 @@ const cors = require('cors');
 require('dotenv').config();
 
 const app = express();
-const port = 3000; // Choose the appropriate port number
+const port = 8080; // Choose the appropriate port number
 
 app.use(cors({
   origin: 'https://64b829ae9900ef101f9a5e3a--kvtran418.netlify.app',
