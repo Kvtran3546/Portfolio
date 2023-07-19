@@ -1,6 +1,5 @@
 const express = require('express');
 const nodemailer = require('nodemailer');
-const bodyParser = require('body-parser');
 const cors = require('cors');
 require('dotenv').config();
 
@@ -12,10 +11,6 @@ app.use(cors({
   methods: '*',
   allowedHeaders: 'Origin, Content-Type, X-Auth-Token',
 }));
-
-// // Middleware to parse form data
-// app.use(bodyParser.urlencoded({ extended: false }));
-// app.use(bodyParser.json());
 
 // Route to handle form submission
 app.post('/submit-form', (req, res) => {
