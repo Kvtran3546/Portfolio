@@ -7,12 +7,12 @@ require('dotenv').config();
 const app = express();
 const port = 3000;
 
-const corsOptions = {
-  origin: 'https://64b81b0e4574b703c49197e3--kvtran418.netlify.app',
-};
-
-app.use(cors(corsOptions));
-
+app.use((req, res, next) => {
+  res.header('Access-Control-Allow-Origin', '*');
+  res.header('Access-Control-Allow-Methods', 'POST');
+  res.header('Access-Control-Allow-Headers', 'Content-Type');
+  next();
+});
 
 // Middleware to parse form data
 app.use(bodyParser.urlencoded({ extended: false }));
