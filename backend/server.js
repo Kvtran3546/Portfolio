@@ -7,8 +7,11 @@ const app = express();
 const port = 3000; // Choose the appropriate port number
 
 app.use(cors({
-  origin: 'https://kvtran418.com',
+  origin: 'https://64b829ae9900ef101f9a5e3a--kvtran418.netlify.app',
 }));
+
+// Middleware to parse form data
+app.use(express.json());
 
 // Route to handle form submission
 app.post('/submit-form', (req, res) => {
