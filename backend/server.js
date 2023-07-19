@@ -5,26 +5,18 @@ const cors = require('cors');
 require('dotenv').config();
 
 const app = express();
-const port = 3000; // Choose the appropriate port number
+const port = 3000;
 
 const corsOptions = {
   origin: 'https://64b81b0e4574b703c49197e3--kvtran418.netlify.app',
-}
+};
 
-app.use(cors());
-
+app.use(cors(corsOptions));
 
 
 // Middleware to parse form data
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
-
-app.use((req, res, next) => {
-  res.header('Access-Control-Allow-Origin', 'https://64b81cde9768fd05740b2b3a--kvtran418.netlify.app');
-  res.header('Access-Control-Allow-Methods', 'POST');
-  res.header('Access-Control-Allow-Headers', 'Content-Type');
-  next();
-});
 
 // Route to handle form submission
 app.post('/submit-form', (req, res) => {
