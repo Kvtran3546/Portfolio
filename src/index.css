@@ -20,10 +20,6 @@ html {
   scroll-behavior: smooth;
 }
 
-div {
-  background-color: #F2F2F2;
-}
-
 .text-gradient {
   background: radial-gradient(
     64.18% 64.18% at 71.16% 35.69%,
@@ -245,4 +241,34 @@ hr {
   height: 2px;
   color: white;
   background-color: white;
+}
+/* 
+.project_card {
+  background: linear-gradient(39deg, #431F54 0%, #151226 60.00%, #17254A 100%);;
+} */
+
+a {
+	color: #18272F;
+  position: relative;
+  text-decoration: none;
+  text-decoration-line: none;
+}
+
+a::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  border-radius: 1px;
+  background-color: black;
+  bottom: 0;
+  left: 0;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform .7s ease-in-out;
+}
+
+a:hover::before {
+  transform-origin: left;
+  transform: scaleX(1);
 }

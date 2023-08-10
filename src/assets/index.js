@@ -13,7 +13,11 @@ import visual_studio from './visual-studio.png';
 import css from './css-3.png';
 import html from './html.png';
 import tailwindcss from './tailwindcss.png';
+import kynamhomes from './kynamhomes.png';
+import credit_ledger from './credit_ledger.png';
 export {
+    credit_ledger,
+    kynamhomes,
     html,
     c_plus,
     c,

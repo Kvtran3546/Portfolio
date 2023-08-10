@@ -82,37 +82,37 @@ const Resume = () => {
     <div className="flex flex-col justify-center items-center">
         <div className='border-b-[2px] border-gray-300 w-[80%] mb-20'></div>
         <div id="Experience" className='flex flex-col items-center justify-between w-[100%]'>
-            <div className='w-[60%] flex flex-row justify-between items-center'>
-                    <h2 className={`${styles.heading2}`}>Experience</h2>
-                    <div className="w-[900px] border-b-2 border-black"></div>
+            <div className='lg:w-[60%] w-[80%] flex flex-row justify-between items-center'>
+                    <h2 className={`${styles.heading2} mr-3`}>Experience</h2>
+                    <div className="w-[900px] border-2 border-black"></div>
                 </div>
-                <div className='w-[55%] flex flex-row justify-between items-center'>
-                    <div></div>
-                    <div className="w-[800px] flex flex-col ">
-                        {experience.map((item, index) => (
-                            <div key={index}>
-                                <div className='flex flex-row justify-between items-center border-b-[1px] border-gray-500'>
-                                    <h3 className={`${styles.heading3} text-[20px] font-semibold`}>{item}</h3>
-                                    <h3 className='italic'>{position[index]}</h3>
-                                </div>
-                                
-                                {workExp[index].map((item, index) => (
-                                    <div className='ml-7 flex flex-row justify-start items-center my-3'>
-                                        <img src={arrow} alt="arrow" className='w-[15px] h-[15px] mr-2'/>
-                                        <p key={index} className=''>{item}</p>
-                                    </div>
-                                ))}
+            <div className='lg:w-[55%] w-[70%] flex flex-row justify-between items-center'>
+                <div></div>
+                <div className="w-[800px] flex flex-col ">
+                    {experience.map((item, index) => (
+                        <div key={index}>
+                            <div className='flex flex-row justify-between items-center border-b-[1px] border-gray-500'>
+                                <h3 className={`${styles.heading3} text-[20px] font-semibold`}>{item}</h3>
+                                <h3 className='italic'>{position[index]}</h3>
                             </div>
-                        ))}
-                    </div>
+                            
+                            {workExp[index].map((item, index) => (
+                                <div className='ml-7 flex flex-row justify-start items-center my-3'>
+                                    <img src={arrow} alt="arrow" className='w-[15px] h-[15px] mr-2'/>
+                                    <p key={index} className=''>{item}</p>
+                                </div>
+                            ))}
+                        </div>
+                    ))}
                 </div>
+            </div>
         </div>
       <div id="Skills" className='flex flex-col items-center justify-between w-[100%]'>
-        <div className='w-[60%] flex flex-row justify-between items-center'>
-            <h2 className={`${styles.heading2}`}>Skills</h2>
-            <div className="w-[900px] border-b-2 border-black"></div>
+        <div className='lg:w-[60%] w-[80%] flex flex-row justify-between items-center'>
+            <h2 className={`${styles.heading2} mr-3`}>Skills</h2>
+            <div className="w-[900px] border-2 border-black"></div>
         </div>
-        <div className='w-[60%] flex flex-row justify-between items-center'>
+        <div className='lg:w-[60%] w-[80%] flex flex-row justify-between items-center'>
             <div></div>
             <div className="w-[900px] flex flex-grid flex-wrap justify-center items-center">
             {skills.map((skill, index) => (
@@ -124,11 +124,11 @@ const Resume = () => {
         </div>
       </div>
       <div id="Courses" className='flex flex-col items-center justify-between w-[100%]'>
-        <div className='w-[60%] flex flex-row justify-between items-center'>
-            <h2 className={`${styles.heading2}`}>Courses</h2>
-            <div className="w-[900px] border-b-2 border-black"></div>
+        <div className='lg:w-[60%] w-[80%] flex flex-row justify-between items-center'>
+            <h2 className={`${styles.heading2} mr-3`}>Courses</h2>
+            <div className="w-[900px] border-2 border-black"></div>
         </div>
-        <div className='w-[60%] flex flex-row justify-between items-center'>
+        <div className='lg:w-[60%] w-[80%] flex flex-row justify-between items-center'>
             <div></div>
             <div className="w-[900px] h-[200px] flex flex-wrap justify-center items-center">
             {courses.map((course, index) => (

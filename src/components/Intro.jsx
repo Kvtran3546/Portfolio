@@ -75,14 +75,14 @@ const Intro = () => {
     };
 
     return (
-      <div className={`relative flex justify-center mt-[100px] h-[542px]`}>
-        <div className={`absolute top-[189px] flex flex-col items-center`}>
+      <div className={`relative flex justify-center mt-[100px] h-full items-center`}>
+        <div className={`absolute top-[30%] flex flex-col items-center`}>
           <img src={Portrait} alt="portrait" className={`${styles.portrait} rounded-full shadow-lg shadow-gray-400`}></img>
           <h2 className={`${styles.main} text-[30px] text-font my-1`}>Khoa Tran</h2>
           <h3 className={`text-gray-500`}>Computer Science Student</h3>
         </div>
         <div onMouseEnter={handleAbout} onMouseLeave={handleAbout}
-          className={`absolute hover_box top-[15%] left-[32%] w-[88px] h-[88px] rounded-lg bg-secondary shadow-lg shadow-gray-400 flex items-center justify-center hover:w-[500px] hover:h-[230px]`}>
+          className={`absolute hover_box lg:top-[13%] lg:left-[32%] top-[10%] left-[25%] w-[88px] h-[88px] rounded-lg bg-secondary shadow-lg shadow-gray-400 flex items-center justify-center hover:w-[500px] hover:h-[230px]`}>
           {expandAbout? 
               <div className={`content rounded-lg bg-secondary py-2 px-3`}>
                   <h1 style={{fontFamily: 'Nunito, sans-serif'}} className='text-[30px] text-black w-inherit h-inherit '>About</h1>
@@ -93,7 +93,7 @@ const Intro = () => {
             }
         </div>
         <div onMouseEnter={handleEducation} onMouseLeave={handleEducation}
-          className={`absolute hover_box top-[27%] right-[27%] w-[88px] h-[88px] rounded-lg bg-secondary shadow-lg shadow-gray-400 flex items-center justify-center hover:w-[300px]  hover:h-[150px]`}>
+          className={`absolute hover_box lg:top-[24%] lg:right-[27%] top-[20%] right-[17%] w-[88px] h-[88px] rounded-lg bg-secondary shadow-lg shadow-gray-400 flex items-center justify-center hover:w-[300px]  hover:h-[150px]`}>
           {expandEducation? 
             <div className="content rounded-lg bg-secondary py-2 px-2">
               <h1 style={{fontFamily: 'Nunito, sans-serif'}} className='text-[30px] text-black w-inherit h-inherit'>Education</h1>
@@ -115,7 +115,7 @@ const Intro = () => {
             <img src={Education} alt="education" className={`w-[24px] h-[24px]`}/>}
         </div>
         <div onMouseEnter={handleContact} onMouseLeave={handleContact}
-          className={`absolute hover_box bottom-[20%] left-[25%] w-[88px] h-[88px] rounded-lg bg-secondary shadow-lg shadow-gray-400 flex items-center justify-center hover:w-[400px] hover:h-[110px] `}>
+          className={`absolute hover_box lg:bottom-[25%] lg:left-[25%] bottom-[35%] left-[15%] w-[88px] h-[88px] rounded-lg bg-secondary shadow-lg shadow-gray-400 flex items-center justify-center hover:w-[400px] hover:h-[110px] `}>
             {expandContact? 
               <div className="content rounded-lg bg-secondary my-2 mx-2">
                 <h1 style={{ fontFamily: 'Nunito, sans-serif' }} className='text-[30px] text-black w-inherit h-inherit'>Contacts</h1>
@@ -157,7 +157,7 @@ const Intro = () => {
             }
         </div>
         <div onMouseEnter={handleActivity} onMouseLeave={handleActivity}
-          className={`absolute hover_box bottom-[8%] right-[35%] w-[88px] h-[88px] rounded-lg bg-secondary shadow-lg shadow-gray-400 flex items-center justify-center hover:w-[400px] hover:h-[250px] `}>
+          className={`absolute hover_box lg:bottom-[14%] lg:right-[35%] bottom-[30%] right-[25%] w-[88px] h-[88px] rounded-lg bg-secondary shadow-lg shadow-gray-400 flex items-center justify-center hover:w-[400px] hover:h-[250px] `}>
             {expandActivity? 
               <div className="content rounded-lg bg-secondary py-2 px-2 flex justify-left flex-col">
                 <h1 style={{fontFamily: 'Nunito, sans-serif'}} className='text-[30px] text-black w-inherit h-inherit'>Activity</h1>
