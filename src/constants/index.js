@@ -4,13 +4,13 @@ export const navLinks = [
       id: "Intro",
       title: "About",
     },
-    // {
-    //   id: "project",
-    //   title: "Projects",
-    // },
     {
       id: "Resume",
       title: "Resume",
+    },
+    {
+      id: "Projects",
+      title: "Projects",
     },
     {
       id: "Contact",

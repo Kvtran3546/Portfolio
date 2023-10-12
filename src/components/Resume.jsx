@@ -55,24 +55,32 @@ const Resume = () => {
         'Stevens Institute of Technology',
     ];
     const position = [
+        'Full Stack Developer',
         'Software Engineer Intern',
         'Python Teacher',
         'Computer Science Tutor'
     ]
+    const NWF = [
+        'Developed and deployed NWF Strategies\' and many of the company\'s clients\' website.',
+        'Improved the performance of Hugging Face Panels.',
+        'Translated Figma layouts into functional code using Locify and Webflow.'
+
+    ]
     const DAB = [
-        'Assist the client, founder of the website, in reviving the site with a better foundation and more intuitive interface in hopes of spreading and improving intercultural awareness between Arab-West and Muslim-Christian.',
-        'Resolve database accessibility issues to ease the process of storing/retrieving numerous articles and reports.',
-        'Migrated the entire application from Drupal 7 to Drupal 9.',
+        'Assisted in reviving the website to promote intercultural awareness between Arab-West and Muslim-Christian communities.',
+        'Resolved database accessibility issues to facilitate article and report storage.',
+        'Migrated the application from Drupal 7 to Drupal 9.',
     ]
     const KCA = [
-        'Prepared a summer worth of intensive coursework that covers the basics and many advanced python topics.',
-        'Conducted and closely monitored two classrooms of 15 students for 20 hours a week.',
+        'Prepared and delivered intensive summer Python coursework.',
+        'Managed two classrooms of 15 students, conducting 20 hours of instruction per week.',
     ];
     const SIT = [
-        'Worked closely with multiple students 20 hours per week to teach the fundamentals of Systems Programming, Data Structures and Algorithms, and Computer Architecture and Design.',
-        'Organized up to 5 one on one or group tutoring sessions each week both virtually and in-person and collaborated with other tutors to improve the instructional environment.',
+        'Provided tutoring in Systems Programming, Data Structures and Algorithms, and Computer Architecture and Design.',
+        'Conducted both virtual and in-person one-on-one and group tutoring sessions.',
     ];
     const workExp = [
+        NWF,
         DAB,
         KCA,
         SIT,

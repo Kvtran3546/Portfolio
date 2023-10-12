@@ -272,3 +272,8 @@ a:hover::before {
   transform-origin: left;
   transform: scaleX(1);
 }
+/* 
+.project_card:hover {
+  background-image: linear-gradient(to bottom, var(--gradient-start, #8b8b8b), var(--gradient-stop, #ffffff));
+  transition: all 400ms;
+} */

@@ -4,7 +4,7 @@ import {projects} from '../constants';
 import ProjectCard from './ProjectCard';
 const Projects = () => {
   return (
-    <div className='w-[95%] flex flex-col justify-center items-center'>
+    <div className='w-[100%] flex flex-col justify-center items-center'>
       <div className='border-b-[2px] border-gray-300 w-[80%] mb-20 mt-10'></div>
       <h1 className={`${styles.heading1}`}>Projects</h1>
       <div className='w-[80%] flex flex-col justify-center items-center'>
