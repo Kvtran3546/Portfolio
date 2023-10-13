@@ -50,6 +50,7 @@ const Resume = () => {
         'Security, Privacy, and Society',
     ];
     const experience = [
+        'NWF Strategies',
         'Dialogue Across Borders',
         'Koo Chinese Academy',
         'Stevens Institute of Technology',

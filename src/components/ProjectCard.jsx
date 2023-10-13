@@ -10,7 +10,7 @@ const ProjectCard = ({ logo, name, url, description }) => {
       <div className='flex flex-col justify-start items-center'>
         <h2 className={`${styles.heading2} mt-2`}>{name}</h2>
         <div className='flex border-b-[3px] border-[#020000] w-[50%] my-5 rounded-full' />
-        <p className={`${styles.paragraph} w-[90%] font-medium lg:text-[30px] text-[10px] mb-3`}>{description}</p>
+        <p className={`${styles.paragraph} w-[90%] font-medium lg:text-[22px] text-[10px] mb-3`}>{description}</p>
         <a href={url} className={`${styles.paragraph} absolute bottom-5 font-semibold`}>Check it out!</a>
       </div>
     </div>
